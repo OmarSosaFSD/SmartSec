@@ -1,0 +1,341 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: auto;
+    background-color: #ccc;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+h2{
+    color: rgb(40, 91, 168);
+}
+.header{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+.logo{
+    float: left;
+    height: 100px;
+    padding-left: 20px;
+    float: left;
+}
+.menuppal{
+    float: right;
+    padding-right: 20px;
+    margin-top: 40px;
+}
+.menusec{
+    display: none;
+}
+.nav{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+    padding-right: 5px;
+}
+.menuppal li{
+    display: inline;
+    font-size: 20px;
+    align-content: space-between;
+    text-transform: uppercase;
+    border-radius: 8px;
+    justify-content: end;
+    margin-right: 10px;
+}
+.menuppal li:hover{
+    background-color:  #adaed4;
+    cursor: pointer;
+    transition: 1ms;
+}
+nav a{
+    display: inline-block;
+    color:#285ba8;
+}
+.imagenfija{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    background-image: url("./imagenes/monitoreocelu_foto.PNG");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #d8e5f5;
+    padding-left: 0px;
+    padding-right: 20%;
+    
+}
+.form{
+    width: 40vw;
+    height: auto;
+    margin-left: 15%;
+    display: grid;
+    flex-wrap: no-wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #285ba8;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+
+}
+.form p{
+    width: 100%;
+    display: inline;
+    background-color: rgb(138, 161, 224);
+    font-size: 200%;
+    font-style: italic;
+    color: white;
+}
+.form label{
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    color: #ffffff;
+}
+.form input{
+    width: 100%;
+    height: 20%;
+    margin-bottom: 5%;
+    border: 1px solid rgb(127, 134, 219);
+    color: white;
+}
+button{
+    font-size: 20px;
+    margin-left: 40%;
+    background-color: transparent;
+    border-color: #b9cff1;
+}
+.imagenfija h4{
+    font-size: 50px;
+    color: #285ba8;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-left: 5%;
+
+}
+/*desde aca para abajo esta el problema, no se me genera la grilla.*/
+
+.grid-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(400px,800px));
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-content: center;
+    /*border: 1px solid blue;*/
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.grid-item{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    /*border: 1px solid orange;*/
+
+}
+.div1 img{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 90px 0px 90px 0px;
+}
+.div2{
+    align-items: center;
+    justify-content: center;
+    display: block;
+    text-align: center;
+    border: 1px solid blue;
+    flex-wrap: no-wrap;
+}
+/*.titulo{
+    font-size: 30%;
+    color: white;
+    margin-top: 20%;
+    padding-left: 5%;
+    color:rgb(47, 49, 53);
+    text-align: center;
+}*/
+.titulo{
+    font-size: 300%;
+    height: 40%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(47, 49, 53);
+    display: grid;
+    border: 1px solid orange;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 0%;
+
+}
+.comentario{
+    border: 1px solid orange;
+    font-size: 200%;
+    text-align: center;
+    height: 50%;
+    margin-top: 0%;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    margin: 0% 0%;
+    
+}
+.div3{
+    align-items: center;
+    justify-content: center;
+    display: block;
+    text-align: center;
+    border: 1px solid blue;
+    flex-wrap: no-wrap;
+    
+    
+}
+
+.div4 img{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0px 90px 0px 90px;
+}
+
+.div5 img{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0px 90px 0px 90px;
+}
+.div6{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    border: 1px solid blue;
+}
+
+/*desde aca esta todo bien el problema son la imagenes y la grilla*/
+
+.cuadricula{
+    height: 500px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: transparent;
+    gap: 40px;
+    border-radius: 10px;
+}
+.cuadricula span{    
+    padding: 10px;
+    background-color: #adaed4;
+    border-radius: 15px;
+    /*margin: auto;*/
+}
+.cuadricula p{
+    font-size: 20px;
+}
+.servicios{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+}
+.servicios p{
+    font-size: 40px;
+    color: rgb(40, 91, 168);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.servicios2{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.servicios2 h3{
+    color: rgb(40, 91, 168);
+}
+span i{
+    font-size: 30px;
+    color: rgb(40, 91, 168);
+}
+
+
+
+
+
+
+@media (max-width:900px){    
+    
+    .menuppal {
+        display:none;
+    }
+    .nav{
+        width: 100%;
+        display: block;
+        position: relative;
+        background-color: black;
+        height: 100px;
+    }
+    
+    .menusec{
+        position:fixed;
+        display: block;
+        width:80%;
+        
+                
+    }
+    .menusec__container-btn{
+        float: right;
+    }
+    .fa-solid{
+        position: absolute;
+        font-size: 50px;
+        padding-top: 10px;
+        color:rgb(40, 91, 168);
+    }
+    .menusec__li-container{
+        display: block;
+        position: relative;
+        margin-top: -1000px;
+        /*width: 50%;
+        float: right;*/
+    }
+    .menusec__li{
+        display: block;
+        font-size: 50px;
+        text-align: end;
+    }
+    .menusec:hover > .menusec__li-container{
+        margin-top: 100px;
+        transition: 1s;
+    }
+    .impacto{
+        display: none;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(1,minmax(200px,800px));
+        grid-template-rows: auto-fill;
+    }
+}
